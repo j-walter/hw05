@@ -39,7 +39,7 @@ export default class Game extends React.Component {
           Clicks: {this.state.clicks}
         </h4>
         <div className="tiles">
-          {this.state.tiles.map((v, i) => <Tile key={i} id={i} value={v.value} isVisible={v.isVisible} isSolved={v.isSolved} toggle={toggle} />)}
+          {this.state.tiles.map((v, i) => <Tile key={i} id={i} value={v.value} isSolved={v.isSolved} toggle={toggle} />)}
         </div>
         <div className="clear" /><br />
         <Button onClick={ () => this.setState(this.reset()) }>Reset</Button>
